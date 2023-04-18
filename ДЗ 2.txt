@@ -1,0 +1,74 @@
+
+Задача 1
+
+int number = new Random().Next (100, 1000);
+int n1 = number /100;
+int n2 = number % 100 / 10;
+int n3 = number % 10;
+Console.WriteLine($"{n2}");
+Console.WriteLine($"{number}");
+
+
+
+задача 2
+
+
+
+int num = ReadInt("Введите число");
+int count = num.ToString().Length;
+Console.WriteLine(MakeArray(num, count));
+int ReadInt(string messege)
+{
+    Console.WriteLine(messege);
+    return Convert.ToInt32(Console.ReadLine());
+}
+int MakeArray(int a, int b)
+{
+    int result = 0;
+    if (b < 3)
+    {
+        Console.WriteLine($"Третьей цифры нет");
+    }
+else{
+    int c = 1;
+    for (int i = b; i > 3; i --)
+    {
+        c = c * 10;
+        }
+        result = (a / c) % 10;
+}
+return result;
+}
+
+
+
+
+задача 3
+
+
+int num = ReadInt("Введите число");
+int count = num.ToString().Length;
+Console.WriteLine(MakeArray(num, count));
+int ReadInt(string messege)
+{
+    Console.WriteLine(messege);
+    return Convert.ToInt32(Console.ReadLine());
+}
+int MakeArray(int a, int b)
+{
+    int result = 0;
+    if (b < 3)
+    {
+        Console.WriteLine($"Третьей цифры нет");
+    }
+else{
+    int c = 1;
+    for (int i = b; i > 3; i --)
+    {
+        c = c * 10;
+        }
+        result = (a / c) % 10;
+}
+return result;
+}
+
